@@ -1,0 +1,1 @@
+const bug=document.querySelector('.bug');let last=0;window.addEventListener('scroll',()=>{const v=Math.min(Math.abs(scrollY-last)*.03,1.2);bug.style.filter=`drop-shadow(0 12px 16px #0006) blur(${v}px)`;last=scrollY});
